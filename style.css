@@ -1,6 +1,6 @@
 
 :root {
-    --lightThemeBgColor: rgb(80, 211, 33);
+    --lightThemeBgColor: rgb(41, 152, 0);
     --lightThemeColor: rgb(0, 0, 0);
     --lightConverterBgColor: rgb(209, 199, 187);
     
@@ -18,15 +18,15 @@ html, body {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    font-family: "Playwrite NG Modern", cursive;
+    font-family: "Montserrat", sans-serif;
     color: var(--lightThemeColor);
+    background-image: url('images/1677640904_bogatyr-club-p-kupyura-shablon-foni-oboi-15.jpg');
 }
 
 .allElements {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('images/1677640904_bogatyr-club-p-kupyura-shablon-foni-oboi-15.jpg');
     min-height: 100%;
     max-height: 100%;
 }
@@ -51,37 +51,47 @@ h1 {
     font-weight: 1000;
 }
 
+.logoOfGithub {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
 .lightMode {
     position: absolute;
-    right: 16px;
-    top: 8px;
+    right: 20px;
+    top: 20px;
 }
 .lightModeBtn{
     background-color: var(--lightConverterBgColor);
-    border-radius: 20px;
+    border-radius: 32px;
     border: 2px solid black;
     padding: 8px;
     color: black;
-    transition: 0.2s;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.1s;
 }
 
 .darkModeBtn {
     background-color: var(--darkConverterBgColor);
-    border-radius: 20px;
+    border-radius: 32px;
     border: 2px solid black;
     padding: 8px;
     color: azure;
-    transition: 0.2s;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.1s;
 }
 
 .lightModeBtn:hover {
     border-color: rgb(84, 84, 84);
-    transform: scale(1.075);
+    transform: scale(1.15);
 }
 
 .darkModeBtn:hover {
     border-color: rgb(149, 149, 149);
-    transform: scale(1.075);
+    transform: scale(1.15);
 }
 
 .main {
@@ -114,7 +124,7 @@ h1 {
     margin-left: 16px;
     padding: 8px;
     background-color: bisque;
-    border-radius: 12px;
+    border-radius: 20px;
     text-align: center;
 }
 
@@ -122,7 +132,7 @@ h1 {
     margin-left: 16px;
     padding: 8px;
     background-color: bisque;
-    border-radius: 12px;
+    border-radius: 20px;
     text-align: center;
 }
 

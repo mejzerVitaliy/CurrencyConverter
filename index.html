@@ -8,12 +8,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div class="allElements">
-        <div class="head" id="headAndFoot">
+        <header class="head" id="headAndFoot">
             <div class="title">
                 <h1>Currency converter</h1>
             </div>
@@ -22,40 +22,79 @@
             <div class="lightMode" id="lightMode">
                 <button id="lightModeBtn" class="lightModeBtn"><h4>light mode</h4></button> 
             </div>
-        </div>
+
+            <div class="logoOfGithub">
+                <a href="https://github.com/mejzerVitaliy/CurrencyConverter" target="_blank"><img src="images\free-icon-github-logo-25231.png" alt="myGitHub"></a>
+            </div>
+        </header>
         
         <div class="main">
             
             <div class="converter">
                 <div class="your">
                     <div class="yourCurrency">
-                        <h3>write a your currency: </h3>
-                        <input type="text" name="" id="yourCurrency" placeholder="US">
+                        <h3>select a your currency: </h3>
+
+                        <input type="text" id="yourCurrency" placeholder="USD" list="currency">
+                        <datalist id="currency">
+                            <option value="EUR">
+                            <option value="USD">
+                            <option value="BGN">
+                            <option value="BRL">
+                            <option value="CAD">
+                            <option value="CHF">
+                            <option value="CNY">
+                            <option value="CZK">
+                            <option value="DKK">
+                            <option value="GBP">
+                            <option value="HKD">
+                            <option value="HUF">
+                            <option value="IDR">
+                            <option value="ILS">
+                            <option value="INR">
+                            <option value="ISK">
+                            <option value="JPY">
+                            <option value="KRW">
+                            <option value="MXN">
+                            <option value="MYR">
+                            <option value="NOK">
+                            <option value="NZD">
+                            <option value="PHP">
+                            <option value="PLN">
+                            <option value="RON">
+                            <option value="SEK">
+                            <option value="SGD">
+                            <option value="THB">
+                            <option value="TRY">
+                            <option value="AUD">
+                            <option value="ZAR">
+                        </datalist>
                     </div>
-                    <div class="value"><input type="number" name="" id="" value="0" min="0"></div>
+                    <div class="value"><input type="number" id="clientValueInp" value="0" min="0"></div>
                 </div>
                 
                 <div class="into">
                     <div class="intoCurrency">
-                        <h3>into Currency: </h3>
-                        <input type="text" name="" id="intoCurrency" placeholder="US">
+                        <h3>into currency: </h3>
+                        <input type="text" id="intoCurrency" placeholder="USD" list="currency">
                     </div>
-                    <div class="value"><input type="number" name="" id="" value="0" min="0"></div>
+                    <div class="value"><input type="number" id="resultValueInp" value="0" min="0" readonly></div>
                 </div>
                 
             </div>
             
         </div>
     
-        <div class="footer" id="headAndFoot">
+        <footer class="footer" id="headAndFoot">
             <div class="info">
-                <h2>informathion about this project</h2>
-                <p>this is converter of currency. this is my second project with JavaScript, i used html, css, js(base of js, DOM, async code and API)</p>
+                <h2>Informathion about this project</h2>
+                <p>This converter of currency is my second project with JavaScript, i used html, css, js(base of js, DOM, async code and API)</p>
             </div>
     
-        </div>
+        </footer>
     </div>
-    
-<script src="script.js"></script>    
+
+    <script type="module" src="script.js"></script>   
+
 </body>
 </html>
