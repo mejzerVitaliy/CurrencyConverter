@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
     <title>Currency converter</title>
     <link rel="stylesheet" href="style.css">
 
@@ -24,62 +24,65 @@
             </div>
 
             <div class="logoOfGithub">
-                <a href="https://github.com/mejzerVitaliy/CurrencyConverter" target="_blank"><img src="images\free-icon-github-logo-25231.png" alt="myGitHub"></a>
+                <a href="https://github.com/mejzerVitaliy/CurrencyConverter" target="_blank"><img src="images\free-icon-github-logo-25231.png" alt="myGitHub" class="img"></a>
             </div>
         </header>
         
         <div class="main">
             
             <div class="converter">
-                <div class="your">
-                    <div class="yourCurrency">
-                        <h3>select a your currency: </h3>
-
-                        <input type="text" id="yourCurrency" placeholder="USD" list="currency">
-                        <datalist id="currency">
-                            <option value="EUR">
-                            <option value="USD">
-                            <option value="BGN">
-                            <option value="BRL">
-                            <option value="CAD">
-                            <option value="CHF">
-                            <option value="CNY">
-                            <option value="CZK">
-                            <option value="DKK">
-                            <option value="GBP">
-                            <option value="HKD">
-                            <option value="HUF">
-                            <option value="IDR">
-                            <option value="ILS">
-                            <option value="INR">
-                            <option value="ISK">
-                            <option value="JPY">
-                            <option value="KRW">
-                            <option value="MXN">
-                            <option value="MYR">
-                            <option value="NOK">
-                            <option value="NZD">
-                            <option value="PHP">
-                            <option value="PLN">
-                            <option value="RON">
-                            <option value="SEK">
-                            <option value="SGD">
-                            <option value="THB">
-                            <option value="TRY">
-                            <option value="AUD">
-                            <option value="ZAR">
-                        </datalist>
+                <div class="fromTo">
+                    <div class="your">
+                        <div class="yourCurrency">
+                            <h3>select a your currency: </h3>
+    
+                            <input type="text" class="input" id="yourCurrency" placeholder="USD" list="currency">
+                            <datalist id="currency">
+                                <option value="EUR">
+                                <option value="USD">
+                                <option value="BGN">
+                                <option value="BRL">
+                                <option value="CAD">
+                                <option value="CHF">
+                                <option value="CNY">
+                                <option value="CZK">
+                                <option value="DKK">
+                                <option value="GBP">
+                                <option value="HKD">
+                                <option value="HUF">
+                                <option value="IDR">
+                                <option value="ILS">
+                                <option value="INR">
+                                <option value="ISK">
+                                <option value="JPY">
+                                <option value="KRW">
+                                <option value="MXN">
+                                <option value="MYR">
+                                <option value="NOK">
+                                <option value="NZD">
+                                <option value="PHP">
+                                <option value="PLN">
+                                <option value="RON">
+                                <option value="SEK">
+                                <option value="SGD">
+                                <option value="THB">
+                                <option value="TRY">
+                                <option value="AUD">
+                                <option value="ZAR">
+                            </datalist>
+                        </div>
+                        <div class="value"><input type="number" id="clientValueInp" value="0" min="0"></div>
                     </div>
-                    <div class="value"><input type="number" id="clientValueInp" value="0" min="0"></div>
+                    
+                    <div class="into">
+                        <div class="intoCurrency">
+                            <h3>into currency: </h3>
+                            <input type="text" class="input" id="intoCurrency" placeholder="USD" list="currency">
+                        </div>
+                        <div class="value"><input type="number" id="resultValueInp" value="0" min="0" readonly></div>
+                    </div>
                 </div>
                 
-                <div class="into">
-                    <div class="intoCurrency">
-                        <h3>into currency: </h3>
-                        <input type="text" id="intoCurrency" placeholder="USD" list="currency">
-                    </div>
-                    <div class="value"><input type="number" id="resultValueInp" value="0" min="0" readonly></div>
-                </div>
                 
             </div>
             

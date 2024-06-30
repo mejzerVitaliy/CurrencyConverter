@@ -49,18 +49,31 @@ h1, h2, h3, h4, p {
 h1 {
     font-size: 48px;
     font-weight: 1000;
+    letter-spacing: 4px;
+    margin: 0 8px;
 }
+
 
 .logoOfGithub {
     position: absolute;
     left: 20px;
     top: 20px;
+    transition: 0.3s;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.logoOfGithub:hover {
+    transform: scale(1.25);
 }
 
 .lightMode {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 20px; 
 }
 .lightModeBtn{
     background-color: var(--lightConverterBgColor);
@@ -69,8 +82,10 @@ h1 {
     padding: 8px;
     color: black;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     transition: 0.1s;
+    width: 100%;
+    height: 100%;
 }
 
 .darkModeBtn {
@@ -80,8 +95,10 @@ h1 {
     padding: 8px;
     color: azure;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 400;
     transition: 0.1s;
+    width: 100%;
+    height: 100%;
 }
 
 .lightModeBtn:hover {
@@ -103,7 +120,7 @@ h1 {
 .converter {
     background-color: var(--lightConverterBgColor);
     border-radius: 32px;
-    width: 60%;
+    width: 65%;
     height: 300px;
     padding: 20px;
     margin: 40px 0 ;
@@ -113,6 +130,10 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.fromTo {
+    max-width: 80%;
 }
 
 .yourCurrency, .intoCurrency {
@@ -163,7 +184,7 @@ h1 {
 
 .footer {
     background-color: var(--lightThemeBgColor);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.393);
+    box-shadow: 0 4px 20px rgb(0, 0, 0);
     text-align: center; 
     padding: 20px 0;
 }
@@ -172,4 +193,162 @@ p {
     font-size: 18px;
     font-weight: 200;
     margin: 0;
+}
+
+
+
+
+@media (max-width: 1000px) {
+    h1{
+        font-size: 36px;
+    }
+    .img {
+        width: 80%;
+        height: 80%;
+    }
+    .lightModeBtn, .darkModeBtn{
+        width: 100%;
+        height: 80%;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 28px;
+    }
+    .img {
+        width: 70%;
+        height: 70%;
+    }
+    .lightModeBtn, .darkModeBtn{
+        width: 100%;
+        height: 50%;
+        font-size: 14px;
+    }
+
+
+    h2 {
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    h1{
+        font-size: 24px;
+    }
+    .img {
+        width: 60%;
+        height: 60%;
+    }
+    .lightModeBtn, .darkModeBtn{
+        width: 100%;
+        height: 30%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .img {
+        width: 60%;
+        height: 60%;
+    }
+    .lightModeBtn, .darkModeBtn{
+        width: 100%;
+        height: 30%;
+        font-size: 12px;
+        
+    }
+    .logoOfGithub {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        top: 6px;
+        left: 6px;
+    }
+    .lightMode{
+        top: 6px;
+        right: 6px;
+    }
+
+
+    h3 {
+        font-size: 18px;
+    }
+    .input{
+        width: 120px;
+        height: 28px;
+    }
+    #clientValueInp, #resultValueInp{
+        width: 200px;
+        height: 32px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+    p{
+        font-size: 10px;
+        margin: 0 20px;
+    }
+}
+@media (max-width: 400px) {
+    h1{
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    .img {
+        width: 50%;
+        height: 50%;
+    }
+    .lightModeBtn, .darkModeBtn{
+        width: 65%;
+        height: 15%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 321px) {
+    h1{
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    .img {
+        width: 40%;
+        height: 40%;
+        margin: 0;
+    }
+    .lightModeBtn, .darkModeBtn{
+        width: 63%;
+        height: 10%;
+        font-size: 8px;
+    }
+
+
+    h3 {
+        font-size: 14px;
+    }
+    .input{
+        width: 100px;
+        height: 20px;
+    }
+    #clientValueInp, #resultValueInp{
+        width: 180px;
+        height: 24px;
+    }
+    .your{
+        margin-bottom: 60px;
+    }
+    .into{
+        margin-top: 60px;
+    }
 }
